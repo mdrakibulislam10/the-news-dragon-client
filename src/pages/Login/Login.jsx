@@ -32,9 +32,6 @@ const Login = () => {
             .catch(err => console.log(err.message))
     };
 
-    // Update a user's profile - get valid photo url from online and paste photo url input box and follow documentation;
-    // const practice;
-
     return (
         <div>
             <Container className='mx-auto w-25'>
