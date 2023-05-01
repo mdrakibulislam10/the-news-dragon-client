@@ -46,7 +46,7 @@ const router = createBrowserRouter([
                 path: "/category/:id",
                 // path: ":id",
                 element: <Category />,
-                loader: ({ params }) => fetch(`http://localhost:5000/categories/${params.id}`)
+                loader: ({ params }) => fetch(`https://the-news-dragon-server-mdrakibulislam10.vercel.app/categories/${params.id}`)
                 // loader: ({ params }) => console.log(params.id)
             },
         ]
@@ -59,7 +59,7 @@ const router = createBrowserRouter([
                 path: "/news/:id",
                 // path: ":id", // sudhu dynamic route likhlew root route er pase bose jabe;
                 element: <PrivateRoutes> <News /> </PrivateRoutes>,
-                loader: ({ params }) => fetch(`http://localhost:5000/news/${params.id}`)
+                loader: ({ params }) => fetch(`https://the-news-dragon-server-mdrakibulislam10.vercel.app/news/${params.id}`)
             }
         ]
     }
